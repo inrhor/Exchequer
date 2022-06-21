@@ -16,6 +16,18 @@ taboolib {
     version = "6.0.9-5"
 }
 
+sourceSets {
+    main {
+        java {
+            srcDir(file("src/main"))
+        }
+    }
+}
+
+java {
+    withSourcesJar()
+}
+
 repositories {
     maven { url = uri("https://repo.nukkitx.com/maven-snapshots") }
     maven { url = uri("https://repo.spongepowered.org/maven") }
