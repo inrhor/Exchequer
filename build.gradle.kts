@@ -19,7 +19,7 @@ taboolib {
 sourceSets {
     main {
         java {
-            srcDir(file("src/main"))
+            srcDir("src/main/kotlin/com.github.inrhor.exchequer.api")
         }
     }
 }
