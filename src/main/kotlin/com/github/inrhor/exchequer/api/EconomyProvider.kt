@@ -14,28 +14,28 @@ interface EconomyProvider {
      *
      * @return 是否有该账户
      */
-    fun UUID.hasAccount(name: String = ""): Boolean
+    fun UUID.hasAccount(name: String): Boolean
 
     /**
      * @param name 账户名称，默认为""
      *
      * 创建账户
      */
-    fun UUID.createAccount(name: String = "")
+    fun UUID.createAccount(name: String)
 
     /**
      * @param name 账户名称，默认为""
      *
      * @return 返回账户
      */
-    fun UUID.getAccount(name: String = ""): Account
+    fun UUID.getAccount(name: String): Account
 
     /**
      * @param name 账户名称，默认为""
      *
      * 删除账户
      */
-    fun UUID.deleteAccount(name: String = "")
+    fun UUID.deleteAccount(name: String)
 
     /**
      * @return 货币集合
